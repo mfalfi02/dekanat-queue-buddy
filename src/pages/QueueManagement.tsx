@@ -164,7 +164,15 @@ const QueueManagement = ({ onTakeQueue }: QueueManagementProps) => {
           <Button size="lg" className="text-lg px-8 py-6" onClick={onTakeQueue}>
             Ambil Nomor Antrean
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-lg px-8 py-6"
+            onClick={() => window.open('/display', '_blank')}
+          >
+            Buka Display Ruang Tunggu
+          </Button>
+          <Button variant="secondary" size="lg" className="text-lg px-8 py-6">
             Login Admin
           </Button>
         </div>
